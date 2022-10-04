@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>First Meeting Notes Document</title>
+    <meta name="description" content="HTML Practice Document">
+    <meta name="author" content="Lauren Chen">
+    <link rel="icon" href="spotify.png">
+  </head>
+  <body>
+    <header class="page-header">
+        <h1>First Meeting Notes!</h1>
+        <h3>Check-ins</h3> 
+        <p><span>October 9, 2022</span></p>
+    </header>
+    <main>
+        <hr>
+        <h2>Attendance Check</h2>
+        <div>
+            <li>Raiaan Mortuja</li>
+            <li>Satvik Singh</li>
+            <li>Alan Sun</li>
+            <li>Lauren Chen</li>
+            <li>Eustacia Sukarto</li>
+            <li>James Cole</li>
+            <li>Jingxin Shi</li>
+            <li>Jungwoon Ko</li>
+            <li>Sofie Gmerek</li>
+        </div>
+
+        <h2>Meeting Agenda</h2>
+        <section>
+            <ol>
+                <li>Get to know one another</li>
+                <li>Plan <b>where</b> and <b>when</b> we will meet weekly</li>
+            </ol>
+        </section>
+        
+
+        <h2>Unresolved notes from last meeting:</h2>
+        <ul> <li> Get <em>everyone</em> on the <i>Slack channel</i></li> </ul>
+        
+
+        <h2>New topics to discuss today:</h2>
+        <ul>
+            <li>Our favorite programming languages</li>
+            <li>The preferred messaging platform for the team</li>
+        </ul>
+
+        <hr>
+
+        <h2>Questions/Comments/Concerns</h2>
+
+        <p>None yet:)</p>
+
+        <hr>
+
+        <h2>Some Diagrams From Class</h2>
+        <img class="fit-picture" 
+        src="focus.png"
+        alt="Focusing Slide from Class">
+
+        <img class="fit-picture" 
+        src="tabs.png"
+        alt="Tabs Slide from Class">
+
+        <hr>
+
+        <h2>Audio & Video</h2>
+
+        <video controls width="400">
+            <source src="IMG_4213.mp4" type="video/mp4">
+        </video>
+        
+        <audio
+        controls
+        src="waves audio.mp3">
+            <a href="waves audio.mp3">
+                Download audio
+            </a>
+        </audio>
+
+        <hr>
+
+        <h2>Links!</h2>
+
+        <h3>Important Class Links:</h3>
+        <ul>
+            <li><a href="https://canvas.ucsd.edu/">Canvas</a></li>
+            <li><a href="https://ucsd.zoom.us/">Zoom</a></li>
+        </ul>
+
+        <h3>Irrelevant and Fun Links:)</h3>
+        <nav>
+            <a href="https://monkeytype.com/">MonkeyType</a> |
+            <a href="https://www.nytimes.com/games/wordle/index.html">Wordle</a> |
+            <a href="https://open.spotify.com/">Spotify</a>
+        </nav>
+
+        <hr>
+
+        <details>
+            <summary>Special Message :)</summary>
+            <strong>Thank you everyone for a great meeting! <br>
+            Have a great rest of your day!</strong>
+        </details>
+
+        <hr>
+
+        <h2>Form!</h2>
+        <form onsubmit="alert('Submitted!')">
+            <fieldset>
+                <textarea>
+                Hi! This is just a simple form to get to know you better!
+                </textarea>
+
+                <br>
+
+                <label for="name">First and Last Name:</label>
+                <input type="text" id="name" name="name" requiredminlength="3" maxlength="12" size="10">
+
+                <br>
+
+                <label for="today">Date:</label>
+                <input type="date" id="today" name="today-date">
+
+                <br>
+
+                <label for="requirement">What requirement does CSE 110 fill for you?</label>
+                <select name="req" id="requirement">
+                    <option value="">--Select--</option>
+                    <option value="major">Major</option>
+                    <option value="minor">Minor</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <br>
+
+                <label for="fav-color">What is your favorite color?</label>
+                <input list="colors" id="fav-color" name="fav-color">
+                <datalist id="colors">
+                    <option value="red">
+                    <option value="orange">
+                    <option value="yellow">
+                    <option value="green">
+                    <option value="blue">
+                    <option value="purple">
+                </datalist>
+
+                <br>
+
+                <label for="fav-season">What is your favorite season?</label>
+                <input type="radio" id="spring" name="fav-season">
+                <label for="spring">Spring</label>
+                <input type="radio" id="summer" name="fav-season">
+                <label for="summer">Summer</label>
+                <input type="radio" id="fall" name="fav-season">
+                <label for="fall">Fall</label>
+                <input type="radio" id="winter" name="fav-season">
+                <label for="winter">Winter</label>
+
+                <br>
+
+                <label for="hobbies">What are some of your hobbies?</label>
+                <input type="checkbox" id="surfing" name="hobbies">
+                <label for="surfing">Surfing</label>
+                <input type="checkbox" id="painting" name="hobbies">
+                <label for="painting">Painting</label>
+                <input type="checkbox" id="baking" name="hobbies">
+                <label for="baking">Baking</label>
+                <input type="checkbox" id="other" name="hobbies">
+                <label for="other">Other</label>
+
+                <br>
+
+                <button>Submit</button>
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        <p>Written by Lauren Chen</p>
+    </footer>
+  </body>
+</html>

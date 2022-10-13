@@ -5,6 +5,40 @@
     <meta name="description" content="HTML Practice Document">
     <meta name="author" content="Lauren Chen">
     <link rel="icon" href="spotify.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mystyle.css">
+    <style>
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            color: darkgreen;
+        }
+        /* when the screen is atleast 100px wide,
+        change the background color to light purple*/
+        @media screen and (min-width: 100px) {
+            body {
+                background-color:rgb(224, 207, 233);
+            }
+        }
+
+        div {
+            font-family: 'Fredoka One', cursive;
+        }
+        
+        #topics {
+            color: red;
+            text-align: left;
+        }
+
+        * {
+            font-size: large;
+        }
+
+        a[target] {
+            background-color: yellow;
+        }
+    </style>
   </head>
   <body>
     <header class="page-header">
@@ -14,34 +48,35 @@
     </header>
     <main>
         <hr>
-        <h2>Attendance Check</h2>
-        <ul>
-            <li>Raiaan Mortuja</li>
-            <li>Satvik Singh</li>
-            <li>Alan Sun</li>
-            <li>Lauren Chen</li>
-            <li>Eustacia Sukarto</li>
-            <li>James Cole</li>
-            <li>Jingxin Shi</li>
-            <li>Jungwoon Ko</li>
-            <li>Sofie Gmerek</li>
+        <h2 class="funtext">Attendance Check</h2>
+        <ul class="grid-container">
+            <li class="grid-item">Raiaan Mortuja</li>
+            <li class="grid-item">Satvik Singh</li>
+            <li class="grid-item">Alan Sun</li>
+            <li class="grid-item">Lauren Chen</li>
+            <li class="grid-item">Eustacia Sukarto</li>
+            <li class="grid-item">James Cole</li>
+            <li class="grid-item">Jingxin Shi</li>
+            <li class="grid-item">Jungwoon Ko</li>
+            <li class="grid-item">Sofie Gmerek</li>
         </ul>
 
         <section>
-            <h2>Meeting Agenda</h2>
-            <ol>
-                <li>Get to know one another</li>
-                <li>Plan <b>where</b> and <b>when</b> we will meet weekly</li>
-            </ol>
+            <h2 class="wrapper">Meeting Agenda</h2>
+            <div class="container">
+                <div>Get to know one another</div>
+                <div>Plan <b>where</b> and <b>when</b> we will meet weekly</div>
+                <div>Create team video</div>
+                <div>Create github repo</div>
+            </div>
         </section>
         
 
         <h2>Unresolved notes from last meeting:</h2>
         <ul> <li> Get <em>everyone</em> on the <i>Slack channel</i></li> </ul>
         
-
-        <h2>New topics to discuss today:</h2>
-        <ul>
+        <h2 id="topics">New topics to discuss today:</h2>
+        <ul class="ems">
             <li>Our favorite programming languages</li>
             <li>The preferred messaging platform for the team</li>
         </ul>
@@ -54,7 +89,7 @@
 
         <hr>
 
-        <h2>Some Diagrams From Class</h2>
+        <h2 class="unique">Some Diagrams From Class</h2>
 
         <div>
             <img class="fit-picture" src="focus.png" alt="Focusing Slide from Class">
@@ -67,7 +102,7 @@
 
         <hr>
 
-        <h2>Audio & Video</h2>
+        <h2 class="box">Audio & Video</h2>
 
         <video controls width="400">
             <source src="IMG_4213.mp4" type="video/mp4">
@@ -83,17 +118,17 @@
 
         <hr>
 
-        <h2>Links!</h2>
+        <h2 class="bluebox">Links!</h2>
 
-        <h3>Important Class Links:</h3>
+        <h3 class="circleborder">Important Class Links:</h3>
         <ul>
             <li><a href="https://canvas.ucsd.edu/">Canvas</a></li>
             <li><a href="https://ucsd.zoom.us/">Zoom</a></li>
         </ul>
 
-        <h3>Irrelevant and Fun Links:)</h3>
+        <h3 style="text-size-adjust: 3px;" class="special">Irrelevant and Fun Links:)</h3>
         <nav>
-            <a href="https://monkeytype.com/">MonkeyType</a> |
+            <a href="https://monkeytype.com/" target="_blank">MonkeyType</a> |
             <a href="https://www.nytimes.com/games/wordle/index.html">Wordle</a> |
             <a href="https://open.spotify.com/">Spotify</a>
         </nav>
@@ -101,7 +136,7 @@
         <hr>
 
         <details>
-            <summary>Special Message :)</summary>
+            <summary style="color:rgb(123, 137, 41); text-size-adjust: 3in;">Special Message :)</summary>
             <strong>Thank you everyone for a great meeting! <br>
             Have a great rest of your day!</strong>
         </details>
@@ -111,7 +146,7 @@
         <h2>Form!</h2>
         <form onsubmit="alert('Submitted!')">
             <fieldset>
-                <textarea>
+                <textarea style="text-size-adjust: 10cm;">
                 Hi! This is just a simple form to get to know you better!
                 </textarea>
 
@@ -150,7 +185,7 @@
 
                 <br>
 
-                <p>What is your favorite season?</p>
+                <p class="center">What is your favorite season?</p>
 
                 <div>
                     <input type="radio" id="spring" name="fav-season" value="spring" checked>

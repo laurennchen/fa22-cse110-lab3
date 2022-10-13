@@ -1,0 +1,146 @@
+body {
+    background-color: #B1CFD7;
+}
+  
+h1 {
+    color: darkolivegreen;
+    position: sticky;
+    top: 20px
+}
+
+h2 {
+    color: rgba(8, 30, 95, 0.968);
+}
+
+h3 {
+    color: hsl(82, 59, 47);
+}
+
+.wrapper {
+    font-size: 4vh;
+}
+
+.ems li {
+    font-size: 1.3em;
+}
+
+.circleborder {
+    width: 200px;
+    height: 25px;
+    margin: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    padding-right: 2px;
+    border-color: brown;
+    border-width: 1.4mm;
+    border-radius: 2in;
+    border-style: groove;
+}
+
+.bluebox {
+    max-width: 70px;
+    max-height: 30px;
+    margin: 3px 3px 3px 3px;
+    padding: 7px 2px 7px 7px;
+    border-color: navy;
+    border-width: 1.4mm;
+    border-radius: 1in;
+    border-style: double;
+}
+
+.box {
+    max-width: 170px;
+    max-height: 30px;
+    margin: auto;
+    padding: 7px 3px 3px 7px;
+    border-color: pink;
+    border-width: 2.2mm;
+    border-radius: 1in;
+    border-style: inset;
+    display: inline-block;
+    position: static;
+}
+
+.funtext {
+    color: darkmagenta;
+    text-decoration: wavy;
+    text-align: left;
+    display: block;
+}
+
+button:hover {
+    color: red;
+}
+
+.box:active{
+    box-shadow: 3px 3px 3px purple;
+}
+
+/* flexbox attributes */
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap-reverse;
+    flex-direction: column-reverse;
+}
+
+.container div {
+    flex-grow: 3;
+    align-self: stretch;
+    flex-basis: content;
+}
+
+/* grid attributes */
+.grid-container {
+    display: grid;
+    row-gap: 5px;
+    grid-area:unset;
+    grid-template-columns: 300px 400px 200px 50px;
+}
+  
+.grid-item {
+    grid-column-start: 17;
+    grid-column-end: 5;
+    grid-area: inherit;
+}
+
+/* make links turn pink when mouse hovers over it */
+a:hover {
+    color: hotpink;
+}
+
+.special, 
+.unique {
+    color: orange;
+}
+
+/* highlights all <h3> elements inside <header> elements */
+header h3 {
+    background-color: yellow;
+}
+
+/* highlights all <li> that are children of a <ul> elements */
+ul > li {
+    background-color: lightgray;
+}
+
+/* highlights all <h2> that are next siblings of <h3> elements */
+h3 ~ h2 {
+    background-color: lightgreen;
+}
+
+/* overlines the first <p> element that is places immediately after <h2> elements */
+h2 + p {
+    text-decoration: overline;
+}
+
+/* <p> elements with class="center" will follow these instructions*/
+p.center {
+    color:beige;
+    text-align: center;
+}
